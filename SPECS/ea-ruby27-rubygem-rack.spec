@@ -16,7 +16,7 @@
 %{?scl:%scl_package rubygem-%{gem_name}}
 
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4590 for more details
-%define release_prefix 1
+%define release_prefix 2
 
 Name:           %{?scl_prefix}rubygem-%{gem_name}
 Summary:        Common API for connecting web frameworks, web servers and layers of software
@@ -101,6 +101,9 @@ rm -rf %{buildroot}
 %{_bindir}/rackup
 
 %changelog
+* Fri Oct 21 2022 Brian Mendoza <brian.mendoza@cpanel.net> - 2.2.4-2
+- ZC-10346: Limit to 2.2 since there are problems with 3.0
+
 * Tue Jul 05 2022 Cory McIntire <cory@cpanel.net> - 2.2.4-1
 - EA-10810: Update ea-ruby27-rubygem-rack from v2.2.3 to v2.2.4
 
