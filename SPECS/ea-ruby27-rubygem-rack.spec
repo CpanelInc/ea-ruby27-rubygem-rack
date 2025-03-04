@@ -103,6 +103,7 @@ rm -rf %{buildroot}
 %changelog
 * Tue Mar 04 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.12-1
 - EA-12745: Update ea-ruby27-rubygem-rack from v2.2.11 to v2.2.12
+    * CVE-2025-27111 Possible Log Injection in Rack::Sendfile.
 
 * Wed Feb 12 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.11-1
 - EA-12706: Update ea-ruby27-rubygem-rack from v2.2.10 to v2.2.11
