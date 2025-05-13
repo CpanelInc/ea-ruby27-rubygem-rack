@@ -20,7 +20,7 @@
 
 Name:           %{?scl_prefix}rubygem-%{gem_name}
 Summary:        Common API for connecting web frameworks, web servers and layers of software
-Version:        2.2.13
+Version:        2.2.14
 Release:        %{release_prefix}%{?dist}.cpanel
 Group:          Development/Languages
 # lib/rack/backports/uri/* are taken from Ruby which is (Ruby or BSD)
@@ -101,6 +101,9 @@ rm -rf %{buildroot}
 %{_bindir}/rackup
 
 %changelog
+* Tue May 06 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.14-1
+- EA-12849: Update ea-ruby27-rubygem-rack from v2.2.13 to v2.2.14
+
 * Mon Mar 10 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.13-1
 - EA-12755: Update ea-ruby27-rubygem-rack from v2.2.12 to v2.2.13
 - CVE-2025-27610 Local file inclusion in Rack::Static.
