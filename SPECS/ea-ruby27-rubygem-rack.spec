@@ -20,7 +20,7 @@
 
 Name:           %{?scl_prefix}rubygem-%{gem_name}
 Summary:        Common API for connecting web frameworks, web servers and layers of software
-Version:        2.2.18
+Version:        2.2.19
 Release:        %{release_prefix}%{?dist}.cpanel
 Group:          Development/Languages
 # lib/rack/backports/uri/* are taken from Ruby which is (Ruby or BSD)
@@ -101,6 +101,9 @@ rm -rf %{buildroot}
 %{_bindir}/rackup
 
 %changelog
+* Tue Oct 07 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.19-1
+- EA-13174: Update ea-ruby27-rubygem-rack from v2.2.18 to v2.2.19
+
 * Mon Oct 06 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.18-1
 - EA-13163: Update ea-ruby27-rubygem-rack from v2.2.17 to v2.2.18
 
