@@ -103,9 +103,13 @@ rm -rf %{buildroot}
 %changelog
 * Tue Oct 07 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.19-1
 - EA-13174: Update ea-ruby27-rubygem-rack from v2.2.18 to v2.2.19
+- CVE-2025-61772 Multipart parser buffers unbounded per-part headers, enabling DoS (memory exhaustion)
+- CVE-2025-61771 Multipart parser buffers large non‑file fields entirely in memory, enabling DoS (memory exhaustion)
+- CVE-2025-61770 Unbounded multipart preamble buffering enables DoS (memory exhaustion)
 
 * Mon Oct 06 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.18-1
 - EA-13163: Update ea-ruby27-rubygem-rack from v2.2.17 to v2.2.18
+- CVE-2025-59830 Unbounded parameter parsing in Rack::QueryParser can lead to memory exhaustion via semicolon-separated parameters.
 
 * Mon Jun 02 2025 Cory McIntire <cory.mcintire@webpros.com> - 2.2.17-1
 - EA-12904: Update ea-ruby27-rubygem-rack from v2.2.16 to v2.2.17
