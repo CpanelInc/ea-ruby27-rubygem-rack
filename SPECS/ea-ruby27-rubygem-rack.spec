@@ -103,6 +103,8 @@ rm -rf %{buildroot}
 %changelog
 * Wed Apr 01 2026 EA4 Update Bot <cory.mcintire@webpros.com> - 2.2.23-1
 - EA-13397: Update ea-ruby27-rubygem-rack from v2.2.22 to v2.2.23
+- CVE-2026-34830: Regex injection via X-Accel-Mapping header in Rack::Sendfile allows attacker to control nginx X-Accel-Redirect response header
+- CVE-2026-34785: Information disclosure in Rack::Static via partial string comparison allows access to files sharing a prefix with configured static dirs
 
 * Sun Feb 15 2026 Cory McIntire <cory.mcintire@webpros.com> - 2.2.22-1
 - EA-13344: Update ea-ruby27-rubygem-rack from v2.2.21 to v2.2.22
