@@ -103,6 +103,7 @@ rm -rf %{buildroot}
 %changelog
 * Thu Aug 13 2026 EA4 Update Bot <cory.mcintire@webpros.com> - 2.2.24-1
 - EA-13530: Update ea-ruby27-rubygem-rack from v2.2.23 to v2.2.24
+- CVE-2026-26962: Improper unfolding of folded multipart headers preserves CRLF in parsed parameter values
 
 * Wed Apr 01 2026 EA4 Update Bot <cory.mcintire@webpros.com> - 2.2.23-1
 - EA-13397: Update ea-ruby27-rubygem-rack from v2.2.22 to v2.2.23
